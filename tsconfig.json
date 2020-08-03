@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "@dcloudio/types/uni-app"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "http/*": [
+        "./src/http/*"
+      ],
+      "model/*": [
+        "./src/model/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "mgr/*": [
+        "./src/mgr/*"
+      ],
+      "pages/*": [
+        "./src/pages/*"
+      ],
+      "subPages/*": [
+        "./src/subPages/*"
+      ],
+      "static/*": [
+        "./src/static/*"
+      ],
+      "typings/*": [
+        "./src/typings/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "unpackage",
+    "src/**/*.nvue"
+  ]
+}
