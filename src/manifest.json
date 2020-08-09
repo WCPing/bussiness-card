@@ -1,6 +1,6 @@
 {
     "name": "bussiness-card",
-    "appid": "",
+    "appid": "wx21ef9bc69f2fb617",
     "description": "",
     "versionName": "1.0.0",
     "versionCode": "100",
@@ -49,7 +49,7 @@
     },
     "mp-weixin": { /* 小程序特有相关 */
         "usingComponents":true,
-        "appid": "",
+        "appid": "wx21ef9bc69f2fb617",
         "setting" : {
         	"urlCheck" : true
         }
