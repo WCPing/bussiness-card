@@ -7,6 +7,13 @@ export default class Home extends Vue {
   userName: string = '吴彦祖'
   phoneNum: string = '18852951656'
 
+  onShareAppMessage(res) {
+    return {
+      title: '很高兴认识你',
+      path: '/pages/mine/Mine'
+    }
+  }
+
   // 呼叫联系人
   doCallPhone() {
     uni.makePhoneCall({

@@ -19,7 +19,7 @@
         </view>
 
         <view class="info-wrapper">
-            <view class="field">
+            <view class="field" @click="doCallPhone">
                 <view class="label">电话</view>
                 <view class="value">{{ phoneNum|empty }}</view>
                 <image class="image-48" src="/static/icon/phone-color.png"></image>
