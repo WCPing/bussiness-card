@@ -2,15 +2,15 @@
     <view class="home-page-wrapper">
         <view class="card-wrapper">
             <view class="left-wrapper">
-                <view class="name">{{ userName|empty }}</view>
-                <view class="career">前端工程师</view>
+                <view class="name">{{ user.name|empty }}</view>
+                <view class="career">{{ user.position|empty }}</view>
                 <view class="phone">
                     <image class="image-32" src="/static/icon/phone-gray.png"></image>
-                    <view class="text">{{ phoneNum|empty }}</view>
+                    <view class="text">{{ user.phone|empty }}</view>
                 </view>
                 <view class="address">
                     <image class="image-32" src="/static/icon/bussiness.png"></image>
-                    <view class="text">上海迪士尼度假村</view>
+                    <view class="text">{{ user.address|empty }}</view>
                 </view>
             </view>
             <view class="right-wrapper">
@@ -21,22 +21,22 @@
         <view class="info-wrapper">
             <view class="field" @click="doCallPhone">
                 <view class="label">电话</view>
-                <view class="value">{{ phoneNum|empty }}</view>
+                <view class="value">{{ user.phone|empty }}</view>
                 <image class="image-48" src="/static/icon/phone-color.png"></image>
             </view>
             <view class="field">
                 <view class="label">微信</view>
-                <view class="value">wcp0923</view>
+                <view class="value">{{ user.weiXin|empty }}</view>
                 <image class="image-48" src="/static/icon/wechat.png"></image>
             </view>
             <view class="field">
                 <view class="label">邮箱</view>
-                <view class="value">1219852916@qq.com</view>
+                <view class="value">{{ user.email|empty }}</view>
                 <image class="image-48" src="/static/icon/letter.png"></image>
             </view>
             <view class="field">
                 <view class="label">地址</view>
-                <view class="value">上海迪士尼度假村</view>
+                <view class="value">{{ user.address|empty }}</view>
                 <image class="image-48" src="/static/icon/position.png"></image>
             </view>
         </view>
