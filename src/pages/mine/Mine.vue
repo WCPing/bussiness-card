@@ -9,18 +9,60 @@
         <view class="sub-tip">
             一张卡片, 一种记忆
         </view>
-        <view class="version">版本号： 0.0.1</view>
+        <view class="version">版本号： 0.0.2</view>
 
     </view>
 </template>
 <script lang="ts" src="./Mine.ts"></script>
 <style lang="scss" scoped>
+
     .mine-page {
         width: 100%;
         height: 100vh;
-        background-color: #f7e7bd;
         position: relative;
         padding-top: 100rpx;
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+
+        /*渐变背景动画效果*/
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
 
         .avatar {
             width: 160rpx;

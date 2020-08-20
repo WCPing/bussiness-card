@@ -16,6 +16,15 @@ export default class Home extends Vue {
   }
 
   onLoad() {
+    this.user = Object.assign({}, new User(), {
+      name: '吴彦组',
+      position: '前端工程师',
+      phone: '18852951656',
+      email: '1219852916@qq.com',
+      weiXin: 'wcp0923',
+      address: '上海迪士尼度假村'
+    })
+
     this.getUser()
   }
 
@@ -24,7 +33,7 @@ export default class Home extends Vue {
     UserApi.getUser('').then((res) => {
       uni.hideLoading()
       this.user = res.data[0]
-      console.log(this.user)
+      console.log(JSON.stringify(this.user))
     }).catch(e => {
       uni.hideLoading()
     })
