@@ -17,12 +17,12 @@ export default class Home extends Vue {
 
   onLoad() {
     this.user = Object.assign({}, new User(), {
-      name: '吴彦组',
+      name: '吴长平',
       position: '前端工程师',
       phone: '18852951656',
-      email: '1219852916@qq.com',
+      email: 'w84814077@163.com',
       weiXin: 'wcp0923',
-      address: '上海迪士尼度假村'
+      address: '现居上海'
     })
 
     this.getUser()

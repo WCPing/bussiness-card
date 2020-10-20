@@ -14,7 +14,7 @@
                 </view>
             </view>
             <view class="right-wrapper">
-                <img class="person-img" src="/static/img/wangyibo.jpg" mode="scaleToFill">
+                <img class="person-img" src="/static/img/wuchangping.png" mode="scaleToFill">
             </view>
         </view>
 

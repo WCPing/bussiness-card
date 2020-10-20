@@ -9,7 +9,7 @@
         <view class="sub-tip">
             一张卡片, 一种记忆
         </view>
-        <view class="version">版本号： 0.0.2</view>
+        <view class="version">版本号： 0.0.3</view>
 
     </view>
 </template>
